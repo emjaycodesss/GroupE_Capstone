@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPressure"
+        android:layout_width="0dp"
+        android:layout_height="155dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/card_bg_color"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTempCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:text="27°C"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="32sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manila"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@+id/tvTempCity"
+                app:layout_constraintTop_toBottomOf="@+id/tvTempCity"
+                android:textSize="14sp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCountryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PH"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@+id/tvCityName"
+                app:layout_constraintTop_toBottomOf="@+id/tvCityName"
+                android:textSize="14sp" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivItemHumidity"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+               android:src="@drawable/hygrometer"
+                app:layout_constraintStart_toStartOf="@+id/tvCountryName"
+                app:layout_constraintTop_toBottomOf="@+id/tvCountryName"
+                android:textSize="14sp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvItemHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="77%"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/ivItemHumidity"
+                app:layout_constraintTop_toTopOf="@+id/ivItemHumidity"
+                app:layout_constraintBottom_toBottomOf="@+id/ivItemHumidity"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAirSpeed"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/air"
+                app:layout_constraintEnd_toStartOf="@+id/tvAirSpeed"
+                app:layout_constraintTop_toBottomOf="@+id/tvCountryName"
+                android:textSize="14sp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAirSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Km/h"
+                android:textColor="@color/white"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ivItemHumidity"
+                app:layout_constraintBottom_toBottomOf="@+id/ivItemHumidity"
+                android:textSize="14sp" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivWeatherImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/cloud_image"
+                app:layout_constraintTop_toBottomOf="@+id/tvTempCity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCountryName"
+                android:textSize="14sp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
